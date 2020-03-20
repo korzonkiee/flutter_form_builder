@@ -144,7 +144,6 @@ class FormBuilderTextFieldState extends State<FormBuilderTextField> {
           widget.onSaved(transformed ?? val);
         }
       },
-      enabled: !_readOnly,
       style: widget.style,
       focusNode: _readOnly ? AlwaysDisabledFocusNode() : widget.focusNode,
       decoration: widget.decoration,

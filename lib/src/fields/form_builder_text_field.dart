@@ -146,9 +146,7 @@ class FormBuilderTextFieldState extends State<FormBuilderTextField> {
       enabled: !_readOnly,
       style: widget.style,
       focusNode: _readOnly ? AlwaysDisabledFocusNode() : widget.focusNode,
-      decoration: widget.decoration.copyWith(
-        enabled: !_readOnly,
-      ),
+      decoration: widget.decoration,
       autovalidate: widget.autovalidate ?? false,
       // initialValue: "${_initialValue ?? ''}",
       maxLines: widget.maxLines,
